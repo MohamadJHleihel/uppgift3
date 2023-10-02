@@ -2,9 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import App from './App';
 import SecondView from './secondview';
+
+
 export default function HomeView({navigation}) {
+
+
   return (
-    <View style={styles.HomeView}>
+    <View style={styles.Homestyle}>
       <Text>Open up App.js to start working on your app!</Text>
 
       <Button title ='Go 2' onPress= {() =>{
@@ -17,7 +21,7 @@ export default function HomeView({navigation}) {
 }
 
 const styles = StyleSheet.create({
-  HomeView: {
+  Homestyle: {
     flex: 1,
     backgroundColor: 'green',
     alignItems: 'center',
