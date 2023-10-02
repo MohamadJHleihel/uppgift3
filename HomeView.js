@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import App from './App';
+import { Button } from 'react-native';
 import SecondView from './secondview';
 
 
-export default function HomeView({navigation}) {
+export default function homeview({navigation}) {
 
 
   return (

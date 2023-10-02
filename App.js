@@ -2,8 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeView from './Homeview';
-import SecondView from './secondview';
+import secondview from './secondview';
+import homeview from './Homeview';
 
 
 export default function App() {
@@ -11,8 +11,8 @@ export default function App() {
   return (
     <NavigationContainer>
      <Stack.Navigator>
-       <Stack.Screen name='HomeView' component ={Welcome} />
-       <Stack.Screen name= 'SecondView'component={Readmore} /> 
+       <Stack.Screen name='HomeView' component ={homeview} />
+       <Stack.Screen name= 'SecondView'component={secondview} /> 
        
        
      </Stack.Navigator>
