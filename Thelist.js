@@ -1,29 +1,37 @@
-import { FlatList,Text,StatusBar,StyleSheet,View } from "react-native";
+import { FlatList,Text,StatusBar,StyleSheet,View,TouchableOpacity } from "react-native";
+import { useState } from "react";
+import { useNavigation } from '@react-navigation/native';
 
-export default function Flat () {
 
-    const data = [{sort:1, title:"Iced Espresso", description:"no sugar"},
-    {sort:2, title:"karamel", description:"sugar"}]; 
-    const Item = ({ title, description }) => (
-      <View>
-        <Text style={styles.title}>{title} </Text>
-        <Text>{description} </Text>
-      </View>
-    );
+
+export default function Flat ({navigation}) {
+
+    const [coffeMenu, setCoffemenu] = useState([
+    {sort:1, title:"Iced Espresso", description:"no sugar"},
+    {sort:2, title:"karamel", description:"sugar"}]); 
+
+  
     
-    const renderItem = ({ item }) => (
-      <Item title={item.title} description={item.description} />
-    );
+   
     return (
       <View style={styles.basket}>
-        {data && (
+   
           <FlatList
-            data={data}
-            renderItem={renderItem}
+            data={coffeMenu}
             keyExtractor={(item) => item.sort}
+            renderItem= {({item}) => 
+              <TouchableOpacity onPress={() => 
+                navigation.navigate ('SecondView')
+              }>
+                <Text>{item.title}</Text>
+               
+                
+               
+              
+             </TouchableOpacity>
+              }
           />
-        )}
-      </View>
+       </View>
     );
     
 
