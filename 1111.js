@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,FlatList} from 'react-native';
 import { Button } from 'react-native';
 import secondview from './22222';
 import { useNavigation } from '@react-navigation/native';
+import flatlist from './flatlist';
 
 
 export default function Homeview({navigation}) {
@@ -16,7 +17,9 @@ export default function Homeview({navigation}) {
         navigation.navigate("SecondView");
 
       }}/>
+      <flatlist/>
       <StatusBar style="auto" />
+      
     </View>
   );
 }
@@ -24,7 +27,7 @@ export default function Homeview({navigation}) {
 const styles = StyleSheet.create({
   Homestyle: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: 'lightblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
