@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Secondview from './22222';
 import Homeview from './1111';
+import Flat from './Thelist';
 
 
 export default function App() {

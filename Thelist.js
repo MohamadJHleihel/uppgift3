@@ -7,9 +7,11 @@ import { useNavigation } from '@react-navigation/native';
 export default function Flat ({navigation}) {
 
     const [coffeMenu, setCoffemenu] = useState([
-    {sort:1, title:"Iced Espresso", description:"no sugar"},
-    {sort:2, title:"karamel", description:"sugar"}]); 
-
+    {sort:1, title:"ApelsinJuice", description:" "},
+    {sort:2, title:"Banansmoothie", description:" "},
+    {sort:3, title:"Cider", description:"sugar"}
+    ]); 
+    
   
     
    
@@ -23,7 +25,7 @@ export default function Flat ({navigation}) {
               <TouchableOpacity onPress={() => {
                 navigation.navigate ('SecondView');
               }}>
-                <Text>{item.title}</Text>
+                <Text style={styles.title}>{item.title}</Text>
                
                 
                
@@ -48,6 +50,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'green',
       alignItems: 'center',
       justifyContent: 'center',
+      padding:20,
     },
     basket: {
         flex:1,
