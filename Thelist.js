@@ -1,9 +1,9 @@
 import { FlatList,Text,StatusBar,StyleSheet,View } from "react-native";
 
-export default function flatlist () {
+export default function Flat () {
 
-    const data = [{id:1, title:"Iced Espresso", description:"no sugar"},
-    {id:2, title:"karamel", description:"sugar"}]; 
+    const data = [{sort:1, title:"Iced Espresso", description:"no sugar"},
+    {sort:2, title:"karamel", description:"sugar"}]; 
     const Item = ({ title, description }) => (
       <View>
         <Text style={styles.title}>{title} </Text>
@@ -20,7 +20,7 @@ export default function flatlist () {
           <FlatList
             data={data}
             renderItem={renderItem}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item) => item.sort}
           />
         )}
       </View>
@@ -36,14 +36,14 @@ export default function flatlist () {
 }
 const styles = StyleSheet.create({
     title: {
-      flex: 1,
-      backgroundColor: 'lightred',
+      flex:1,
+      backgroundColor: 'green',
       alignItems: 'center',
       justifyContent: 'center',
     },
     basket: {
-        flex: 1,
-        backgroundColor: 'black',
+        flex:1,
+        backgroundColor: 'lightblue',
         alignItems: 'center',
         justifyContent: 'center',
   }

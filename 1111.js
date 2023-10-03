@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,FlatList} from 'react-native';
 import { Button } from 'react-native';
 import secondview from './22222';
 import { useNavigation } from '@react-navigation/native';
-import flatlist from './flatlist';
+import Flat from './Thelist';
 
 
 export default function Homeview({navigation}) {
@@ -17,7 +17,7 @@ export default function Homeview({navigation}) {
         navigation.navigate("SecondView");
 
       }}/>
-      <flatlist/>
+      <Flat/>
       <StatusBar style="auto" />
       
     </View>
