@@ -20,9 +20,9 @@ export default function Flat ({navigation}) {
             data={coffeMenu}
             keyExtractor={(item) => item.sort}
             renderItem= {({item}) => 
-              <TouchableOpacity onPress={() => 
-                navigation.navigate ('SecondView')
-              }>
+              <TouchableOpacity onPress={() => {
+                navigation.navigate ('SecondView');
+              }}>
                 <Text>{item.title}</Text>
                
                 
