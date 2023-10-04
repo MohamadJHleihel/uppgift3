@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,FlatList } from 'react-native';
 import { Button } from 'react-native';
-import homeview from './1111';
+import homeview from './Home';
 import { useNavigation } from '@react-navigation/native';
 
 
