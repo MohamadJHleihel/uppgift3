@@ -7,9 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 export default function Flat ({navigation}) {
 
     const [coffeMenu, setCoffemenu] = useState([
-    {sort:1, title:"ApelsinJuice", description:" "},
-    {sort:2, title:"Banansmoothie", description:" "},
-    {sort:3, title:"Cider", description:"sugar"}
+    {sort:1, title:"ApelsinJuice", description:"Our favourite "},
+    {sort:2, title:"Banansmoothie", description:"Our speciality"},
+    {sort:3, title:"Cider", description:"New product"}
     ]); 
     
   
@@ -26,6 +26,7 @@ export default function Flat ({navigation}) {
                 navigation.navigate ('SecondView');
               }}>
                 <Text style={styles.title}>{item.title}</Text>
+                <Text style={styles.title}>{item.description}</Text>
                
                 
                

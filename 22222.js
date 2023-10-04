@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,FlatList } from 'react-native';
 import { Button } from 'react-native';
 import homeview from './1111';
 import { useNavigation } from '@react-navigation/native';
@@ -8,9 +8,9 @@ import { useNavigation } from '@react-navigation/native';
 export default function Secondview({navigation}) {
   return (
     <View style={styles.secondstyle}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.bigText}>All our drinks are 100% free of sugar</Text>
 
-      <Button title ='Go 1' onPress= {() =>{
+      <Button title ='Go to main menu' onPress= {() =>{
         navigation.navigate("HomeView");
 
       }}/>
@@ -25,5 +25,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightgreen',
     alignItems: 'center',
     justifyContent: 'center',
+    
+  },
+  bigText: {
+  fontSize: 40,
   },
 });

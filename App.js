@@ -6,15 +6,16 @@ import Secondview from './22222';
 import Homeview from './1111';
 import Flat from './Thelist';
 
+const Stack = createNativeStackNavigator()
 
 export default function App() {
-  const Stack = createNativeStackNavigator();
+  
   return (
     <NavigationContainer>
      <Stack.Navigator>
        <Stack.Screen name='HomeView' component ={Homeview} />
        <Stack.Screen name= 'SecondView'component={Secondview} /> 
-       
+        
        
      </Stack.Navigator>
 

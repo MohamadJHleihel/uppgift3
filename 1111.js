@@ -11,12 +11,13 @@ export default function Homeview({navigation}) {
 
   return (
     <View style={styles.Homestyle}>
-      <Text>Open up App.js to start working on your app!</Text>
-
-      <Button title ='Go 2' onPress= {() =>{
+      <Text>Welcome! choose a drink </Text>
+      <View style={styles.lineStyle}>
+      <Button color="white" title ='Note about our drinks'  onPress= {() =>{
         navigation.navigate("SecondView");
 
       }}/>
+      </View>
       <Flat/>
       <StatusBar style="auto" />
       
@@ -31,4 +32,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  lineStyle: {
+    weight: 100,
+    length:100,
+    backgroundColor:'blue',
+    itemText:'wh',
+
+  }
 });
