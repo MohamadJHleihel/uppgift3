@@ -6,7 +6,7 @@ import Secondview from './Second';
 import Homeview from './Home';
 import Flat from './Thelist';
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   

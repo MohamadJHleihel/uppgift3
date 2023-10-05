@@ -23,7 +23,7 @@ export default function Flat ({navigation}) {
             keyExtractor={(item) => item.sort}
             renderItem= {({item}) => 
               <TouchableOpacity onPress={() => {
-                navigation.navigate ('SecondView');
+                navigation.navigate ("SecondView");
               }}>
                 <Text style={styles.title}>{item.title}</Text>
                 <Text style={styles.title}>{item.description}</Text>

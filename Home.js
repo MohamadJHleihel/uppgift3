@@ -25,7 +25,7 @@ export default function Homeview({navigation}) {
         <Text>         </Text>
         <Text>          </Text>
       </View>
-      <Flat/>
+      <Flat navigation={navigation} />
       <StatusBar style="auto" />
       
     </View>
