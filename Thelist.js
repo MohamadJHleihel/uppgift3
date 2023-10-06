@@ -26,7 +26,7 @@ export default function Flat ({navigation}) {
                 navigation.navigate ("SecondView");
               }}>
                 <Text style={styles.title}>{item.title}</Text>
-                <Text style={styles.title}>{item.description}</Text>
+                <Text style={styles.description}>{item.description}</Text>
                
                 
                
@@ -52,6 +52,16 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       padding:20,
+ 
+    },
+    description: {
+      flex:1,
+      backgroundColor: 'green',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom:10,
+      padding:5,
+      
     },
     basket: {
         flex:1,
